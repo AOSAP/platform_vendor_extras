@@ -25,10 +25,10 @@ function mka() {
 function breakfast()
 {
     target=$1
-    ABC_DEVICES_ONLY="true"
+    AOSAP_DEVICES_ONLY="true"
     unset LUNCH_MENU_CHOICES
     add_lunch_combo full-eng
-    for f in `/bin/ls vendor/nexus/vendorsetup.sh 2> /dev/null`
+    for f in `/bin/ls vendor/aosap/vendorsetup.sh 2> /dev/null`
         do
             echo "including $f"
             . $f
@@ -45,8 +45,8 @@ function breakfast()
             # A buildtype was specified, assume a full device name
             lunch $target
         else
-            # This is probably just the ABC model name
-            lunch abc_$target-user
+            # This is probably just the AOSAP model name
+            lunch aosap_$target-user
         fi
     fi
     return $?

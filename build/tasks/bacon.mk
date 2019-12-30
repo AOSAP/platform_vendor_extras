@@ -38,22 +38,7 @@ bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
 	$(hide) $(MD5SUM) $(INTERNAL_BACON_TARGET) | sed "s|$(PRODUCT_OUT)/||" > $(INTERNAL_BACON_TARGET).md5sum
 	#@echo "Package Complete: $(INTERNAL_BACON_TARGET)" >&2
 
-	@echo  ${CL_RED}""${CL_RED}
-	@echo " "
-	@echo "THE   db       7MMmmmYp,   .g8mmmd· "
-	@echo "     ;MM:       MM    Yb .dP·      · "
-	@echo "    ,V^MM.      MM    dP dM·        "
-	@echo "   ,M  ·MM      MM···bg  MM"
-	@echo "   AbmmmqMA     MM    ·Y MM.           ____ ____ _  _  "
-	@echo "  A·     VML    MM    ,9 ·Mb.     ,·   |__/ |  | |\/| "
-	@echo ".AMA.   .AMMA  JMMmmmd9    ··bmmmd·    |  \ |__| |  |"
-	@echo " "
-	@echo -e ${CL_RST}""${CL_RST}
-	@echo -e ${CL_RST}""${CL_RST}
-	@echo -e ${CL_RST}"                    You are officially a karnt (Aussie's TM) now                 "${CL_RST}
-	@echo -e ${CL_RST}""${CL_RST}
 	@echo -e ${CL_RED}"======================================================================================="${CL_RED}
 	@echo -e ${CL_RST}""Package Complete: "$(INTERNAL_BACON_TARGET)"${CL_RST}
 	@echo -e ${CL_RED}"======================================================================================="${CL_RED}
-	@echo -e ${CL_RST}"We pity the fool who thinks not to be a cunt!"${CL_RST}
 
